@@ -1,0 +1,247 @@
+/*Общие*/
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: #5528FF;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: #fff;
+    font-family: 'Hellix', sans-serif;
+    margin: 0;
+    color: #202020;
+}
+.container-fluid{
+    padding: 0;
+}
+.line__text{
+    text-transform: uppercase;
+    font-family: 'Actor', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(194, 194, 194, 1); 
+    align-items: center;  
+    margin-bottom: 0; 
+}
+.line{
+    display: flex;
+    white-space: nowrap; 
+    align-items: center;  
+}
+.line::after,
+.line::before{
+    content:"";
+    border-top: 1px solid #C2C2C2;
+}
+.line::after{
+    margin-left: 60px;
+    width: 100%;
+}
+.line::before{
+    margin-right: 20px;
+    width: 5%;
+    left: -10px;
+}
+.btn-primary{
+    border: 3px solid #5528FF;
+    background-color: #5528FF;
+}
+.container-content{
+    margin-top: 100px;
+}
+/*Шапка*/
+.header{
+    font-weight: 700;
+}
+.header__nav-list-item{
+    display: inline-block;
+}
+.header__nav-button{
+    display: inline-block;
+}
+.item{
+    font-size: 14px;
+    line-height: 16px;
+}
+.item-btn{
+    padding-bottom: 7px;
+    height: 25px;
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 5px;
+}
+/*Описание*/
+.description{
+    margin-top: 125px;
+}
+.description__content-title{
+    margin-bottom: 25px;
+}
+.description__content-text{
+    margin-bottom: 70px;
+}
+.description__content-button{
+    margin-bottom: 100px;
+}
+.main-title{
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: 600;
+}
+.main-text{
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+.main-button{
+    width: 235px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    border-radius: 10px;
+    text-align: center;
+}
+/*Секция с услугами*/
+.services{
+    margin-bottom: 20px;
+}
+.services__content{
+    display: flex;
+    margin-bottom: 80px;
+}
+.services__content-image{
+    margin-right: 50px;
+    padding-top: 20px;
+}
+.big-image{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.services__content-title{
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.services__content-text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #B2B2B2;
+}
+/*Секция с клиентами*/
+.clients__logo{
+    margin-top: 55px;
+    margin-bottom: 105px;
+}
+.clients__logo-image{
+    margin-bottom: 65px;
+    text-align: center;
+}
+/*Секция с сотрудниками*/
+.team{
+    margin-bottom: 100px;
+}
+.team__content{
+    display: flex;
+    margin-bottom: 60px;
+    padding: 0;
+}
+.team__content:nth-child(3n){
+    margin-right: 0;
+}
+.team__content-box{
+    margin-left: 20px;
+}
+.team__content-name{
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.team__content-position{
+    font-size: 14px;
+    line-height: 16px;
+    color: #B2B2B2;
+    margin-right: 10px;
+}
+/*Футер*/
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #F7F7F7;
+}
+.footer__items{
+    margin: 0;
+}
+.footer__items-logo{
+    margin-left: 15px;
+}
+/*Адаптив*/
+@media (max-width:992px){
+    .main-title{
+       font-size: 50px;
+    }
+    .main-text{
+        font-size: 26px;
+    }
+    .main-button{
+        width: 200px;
+        height: 55px;
+    }
+}
+@media (max-width:767px){
+    .main-title{
+       font-size: 45px;
+    }
+    .main-text{
+        font-size: 22px;
+    }
+    .main-button{
+        width: 170px;
+        height: 50px;
+    }
+}
+@media (max-width:565px){
+    .main-title{
+       font-size: 35px;
+       line-height: 40px;
+    }
+    .main-text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .main-button{
+        width: 180px;
+        height: 45px;
+    }
+    .team__content-name{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+@media (max-width:495px){
+    .main-title{
+       font-size: 28px;
+    }
+    .main-text{
+        font-size: 16px;
+    }
+    .main-button{
+        width: 180px;
+        height: 45px;
+    }
+}
